@@ -12,7 +12,7 @@ if [[ $numprocesses > 2 ]] ; then
 		echo -e "${RED}kismet down${NC}"
 fi
 
-string=$(iwconfig wlan0 & iwconfig wlan1 )
+string=$(iwconfig wlan0)
 if [[ $string == *"Mode:Monitor"* ]]; then
 	echo -e "${GREEN}Monitor Mode Detected${NC}"
 	echo

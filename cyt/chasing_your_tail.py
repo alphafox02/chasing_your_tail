@@ -13,14 +13,14 @@ import pathlib
 
 
 ### Check for/make subdirectories for logs, ignore lists etc.
-cyt_sub = pathlib.Path('/home/pi/Desktop/cyt/cyt_sub')
+cyt_sub = pathlib.Path('/home/ubuntu/chasing_your_tail/cyt/cyt_sub')
 cyt_sub.mkdir(parents=True, exist_ok=True)
 
 print ('Current Time: ' + time.strftime('%Y-%m-%d %H:%M:%S'))
 
 ### Create Log file
 
-log_file_name = '/home/pi/Desktop/cyt/cyt_sub/cyt_log_' + time.strftime('%m%d%y_%H%M%S')
+log_file_name = '/home/ubuntu/chasing_your_tail/cyt/cyt_sub/cyt_log_' + time.strftime('%m%d%y_%H%M%S')
 
 cyt_log = open(log_file_name,"w", buffering=1) 
 
@@ -63,7 +63,7 @@ cyt_log.write ('{} MACs added to ignore list. \n'.format(len(ignore_list)))
 cyt_log.write ('{} Probed SSIDs added to ignore list. \n'.format(len(probe_ignore_list)))
 
 ### Set Initial Variables
-db_path = '/home/pi/kismet_logs/*.kismet'
+db_path = '/home/ubuntu/chasing_your_tail/kismet_logs/*.kismet'
 
 ###Initialize Lists
 current_macs = []
