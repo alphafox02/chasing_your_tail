@@ -1,1 +1,1 @@
-python3 /home/ubuntu/chasing_your_tail/cyt/chasing_your_tail.py 
+python3 /home/pi/Desktop/cyt/chasing_your_tail.py 
